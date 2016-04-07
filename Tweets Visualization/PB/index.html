@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset="UTF-8">
+    <title>Visualization</title>
+
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>-->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <!-- Plotly.js -->
+
+    <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-route.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-animate.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- Numeric JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/numeric/1.2.6/numeric.min.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+    <script src="//d3js.org/d3.v3.min.js"></script>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+
+    <!--morris js-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="http://cdn.oesmith.co.uk/morris-0.4.1.min.js"></script>
+
+
+    <!--Am Charts-->
+    <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+    <script src="https://www.amcharts.com/lib/3/pie.js"></script>
+    <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+    <script src="https://www.amcharts.com/lib/3/funnel.js"></script>
+    <script src="https://www.amcharts.com/lib/3/serial.js"></script>
+
+    <!--Chart.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+
+    <script src="app.js"></script>
+
+    <!--<style>-->
+        <!--#map{-->
+            <!--height:500px;-->
+            <!--width:900px;-->
+            <!--margin-left: 20px;-->
+            <!--/*box-shadow: 3px 3px 10px gray;*/-->
+        <!--}-->
+        <!--text {-->
+            <!--font: 10px sans-sserif;-->
+        <!--}-->
+    <!--</style>-->
+    <!--<style>-->
+        <!--body {-->
+            <!--background-image: url('http://www.sealcoating-joe.com/wp-content/uploads/2011/11/JOES-Website-Background-light-grey.jpg');-->
+        <!--}-->
+    <!--</style>-->
+
+
+</head>
+<body ng-app="myapp">
+<!--<script src="//d3js.org/d3.v3.min.js"></script>-->
+<!--<div class="jumbotron">-->
+    <!--<h1>Twiiter Tweets Visualization</h1>-->
+<!--</div>-->
+
+<div ng-controller="home" class="">
+    <div class = "panel panel-default">
+    <div class = "panel-heading" style="text-align: center; font-weight: 500; font-size: large; font-family: Source Sans Pro">
+        Principles of Big Data - Tweets Visualization
+    </div>
+    </div>
+    <div style="padding-top: 5px;padding-left: 10px; font-family: Source Sans Pro; font-size: x-large">
+    <form>
+        <select class="btn btn-primary dropdown-toggl" name="naver" id="naver" ng-model="currentPage" ng-change="go(currentPage)">
+            <!--<option value="Home">Home</option>-->
+            <option value="CrazeAnalysis">Analyze the Craze of each contestant in presidential elections</option>
+            <option value="LocationAnalysis">Analyze based on Location of Tweets</option>
+            <option value="LanguageAnalysis">Analyze tweets count based on tweet Language</option>
+            <option value="SourceAnalysis">Analyze tweets count based on its Source</option>
+            <option value="CelebAnalysis">Analyze verified account with highest followers count</option>
+            <option value="DayAnalysis">Analyze tweet count on each Day of week</option>
+            <option value="StatsAnalysis">Analyze top users with maximum tweet and retweet count</option>
+            <option value="TimezoneAnalysis">Analyze tweets based on each Time zone count</option>
+        </select>
+    </form>
+    </div>
+
+    <!--<button ng-click="craze()">Craze Analysis</button>-->
+    <div ng-view style="padding-top: 20px"></div>
+    <!--<button ng-click="location()">Craze Analysis</button>-->
+    <!--<div id="map"></div>-->
+    <!--<div  id="myDiv" style="width: 480px; height: 380px;">&lt;!&ndash; Plotly chart will be drawn inside this DIV &ndash;&gt;</div>-->
+</div>
+<!--<script src="app.js"></script>-->
+</body>
+</html>

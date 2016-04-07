@@ -1,0 +1,31 @@
+<style>
+    .button{
+        width: 200px;
+    }
+</style>
+<H3 style="text-align: center; color: #2792ff; font-family: Source Sans Pro">Highly followed and verified accounts</H3>
+<div class="row" id="first" style="display: none; padding-left: 10px">
+
+    <div class="col-sm-3" id="main">
+        <br>
+        <button class="btn btn-info btn-block" ng-click="button1()">{{name1}}</button>
+        <button class="btn btn-info btn-block" ng-click="button2()">{{name2}}</button>
+        <button class="btn btn-info btn-block" ng-click="button3()">{{name3}}</button>
+        <button class="btn btn-info btn-block" ng-click="button4()">{{name4}}</button>
+        <button class="btn btn-info btn-block" ng-click="button5()">{{name5}}</button>
+        <button class="btn btn-info btn-block" ng-click="button6()">{{name6}}</button>
+        <button class="btn btn-info btn-block" ng-click="button7()">{{name7}}</button>
+        <button class="btn btn-info btn-block" ng-click="button8()">{{name8}}</button>
+        <button class="btn btn-info btn-block" ng-click="button9()">{{name9}}</button>
+        <button class="btn btn-info btn-block" ng-click="button10()">{{name10}}</button>
+    </div>
+
+    <div class="col-sm-6" style="padding-left: 50px; padding-top: 20px">
+        <img class="img-rounded" src={{naga}} height="{{width}}" width="{{width}}">
+        <!--<div class="Icon" ng-bind-html="renderHtml(Icon)"></div>-->
+        <div class="description" ng-bind-html="renderHtml(description)" style="padding-top: 20px">
+        </div>
+        <div class="followersCount" ng-bind-html="renderHtml(followersCount) " style="padding-top: 10px"></div>
+    </div>
+
+</div>

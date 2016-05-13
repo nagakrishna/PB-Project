@@ -2,7 +2,7 @@
 
 In this project, collected and analysed twitter data based on US elections criteria. We have drawn different conclusions and visualized the results.
 
-Technology and Tools Used:
+Technologies and Tools Used:
 
 1. Environment: Ubuntu
 2. Tools: IntelliJ, Webstorm, Spark 1.6.1

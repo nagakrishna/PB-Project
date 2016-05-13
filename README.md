@@ -1,6 +1,6 @@
 # US ELECTIONS TWEETS ANALYSIS
 
-In this project, collected and analysed twitter data based on US elections criteria. We have drawn different conclusions and visualized the results.
+In this project, collected twitter tweets data based on US elections criteria and analysed using Apache Spark. We have drawn different conclusions and visualized the results.
 
 Technologies and Tools Used:
 
@@ -9,5 +9,5 @@ Technologies and Tools Used:
 3. Java REST API for backend servies
 4. Angular js for front end
 5. Plotly.js, Amcharts, Charts.js, Google Maps for visualization
-6. Bluemixt for hosting Application
+6. Bluemix for hosting Application
 
